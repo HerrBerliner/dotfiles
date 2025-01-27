@@ -35,8 +35,12 @@ and optionally you can install a GUI utility for opening archives
 ### Installing Pipewire sound system
 
 ```sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack```
+
 and then
+
 ```systemctl --user enable --now pipewire.socket pipewire-pulse.socket wireplumber```
+
 optionally you can install rt daemon to decrease a sound lattency
 ```sudo pacman -S realtime-privileges rtkit```
+
 ```sudo usermod -aG realtime "$USER"```
