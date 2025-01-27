@@ -41,6 +41,7 @@ and then
 ```systemctl --user enable --now pipewire.socket pipewire-pulse.socket wireplumber```
 
 optionally you can install rt daemon to decrease a sound lattency
+
 ```sudo pacman -S realtime-privileges rtkit```
 
 ```sudo usermod -aG realtime "$USER"```
